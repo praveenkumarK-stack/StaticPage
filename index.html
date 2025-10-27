@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>My Portfolio</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <div class="background-glow"></div>
+
+  <header id="header">
+    <div class="logo">✨ MyPortfolio</div>
+    <nav>
+      <ul class="nav-links">
+        <li><a href="#home" class="active">Home</a></li>
+        <li><a href="#about">About</a></li>
+        <li><a href="#projects">Projects</a></li>
+        <li><a href="#contact">Contact</a></li>
+      </ul>
+    </nav>
+    <button id="themeToggle">🌙</button>
+  </header>
+
+  <section id="home" class="hero">
+    <div class="hero-content fade-in">
+      <h1>Hey, I'm <span class="highlight">Your Name</span></h1>
+      <h2 id="typing"></h2>
+      <p>Designing, building, and crafting stunning web experiences.</p>
+      <button onclick="scrollToSection('projects')">Explore My Work</button>
+    </div>
+  </section>
+
+  <section id="about" class="section fade-in">
+    <h2>About Me</h2>
+    <p>
+      I'm a front-end developer who blends design and technology to create delightful interfaces. 
+      With a passion for visuals and clean code, I build experiences that feel as good as they look.
+    </p>
+  </section>
+
+  <section id="projects" class="section fade-in">
+    <h2>Projects</h2>
+    <div id="project-container" class="project-grid">
+      <!-- Projects are injected by JS -->
+    </div>
+  </section>
+
+  <section id="contact" class="section fade-in">
+    <h2>Let's Connect</h2>
+    <p>Interested in working together or just saying hi?</p>
+    <a href="mailto:youremail@example.com" class="contact-btn">📧 Get in Touch</a>
+  </section>
+
+
+
+  <button id="topBtn" title="Back to Top">⬆</button>
+
+  <script src="script.js"></script>
+</body>
+</html>
